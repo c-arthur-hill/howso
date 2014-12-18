@@ -1,0 +1,4 @@
+*.pyc
+*.env
+settings_config.env
+
