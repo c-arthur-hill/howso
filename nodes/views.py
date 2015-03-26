@@ -46,6 +46,11 @@ class LinkCreate(AjaxResponseMixin, CreateView):
         return "/search/" + str(self.object.parent.pk) + "/"
 
     def form_valid(self, form):
+        '''
+        The node model has a m2m attribute named, "parents".
+        Parents records votes between, so it uses a through field called 
+        NodeConnection, which is created here.
+        '''
         child = Node.objects.get(pk=self.request.POST.get("child"))
         parent = Node.objects.get(pk=self.kwargs.get("parent_pk")) 
         #probably need try/except to catch connections to original questions
@@ -85,6 +90,12 @@ class AlternateLinkCreate(AjaxResponseMixin, CreateView):
         return "/search/" + str(self.object.parent.pk) + "/"
 
     def form_valid(self, form):
+        '''
+        The alternate model has a m2m attribute named, "originals".
+        originals records votes between, so it uses a through field called 
+        AlternateConnection, which is created here.
+        parent and child is a sideways connection, one is not above the other.
+        '''
         child = Node.objects.get(pk=self.request.POST.get("child"))
         parent = Node.objects.get(pk=self.kwargs.get("parent_pk"))
         self.object = AlternateConnection.objects.get_or_create(child=child, parent=parent)
@@ -109,6 +120,10 @@ class AlternateLinkCreate(AjaxResponseMixin, CreateView):
         return context
 
     def get_form_kwargs(self):
+        '''
+        This passes the kwargs and request to the form as kwargs
+        so that they can be used for cleaning
+        '''
         kw = super(AlternateLinkCreate, self).get_form_kwargs()
         kw['kwargs'] = self.kwargs # the trick!
         kw['request'] = self.request
@@ -128,10 +143,12 @@ class NodeCreate(AjaxResponseMixin, CreateView):
             node.user = self.request.user
         node.save()
         try:
+            #if this was done as a question or answer to another question or answer
             parent = Node.objects.get(pk=self.request.POST.get("parent_pk", -1)) 
             node_connection = NodeConnection(parent=parent, child=node)
             node_connection.save()
         except Node.DoesNotExist:
+            #if this was just done through an initial question
             pass
         context = self.get_context_data()
         context["node"] = node
@@ -178,10 +195,16 @@ class AlternateCreate(AjaxResponseMixin, CreateView):
         return "/search/" + str(self.object.original.pk) + "/"
 
     def form_valid(self, form):
+        '''
+        create a normal node -- question or answer same as what
+        this is the alternate to, then connect it with an 
+        AlternateConnection
+        '''
         alternate = form.save(commit=False)
         alternate.user = self.request.user
         alternate.save()
         parent = Node.objects.get(pk=self.kwargs.get("parent_pk"))
+        #connection
         ac = AlternateConnection(parent=parent, child=alternate, owner=self.request.user)
         ac.save()
         context = self.get_context_data()
@@ -251,6 +274,11 @@ class NodeSearch(SearchView):
         node_page = False
         if not self.results:
             try:
+                '''
+                This is like a node page. It get alls the nodes related
+                to whatever the main node is. So like an approach and all the
+                questions that lead to it and that lead from it.
+                '''
                 main = Node.objects.get(pk=self.main_pk)
                 node_connections = NodeConnection.objects.filter(Q(child=self.main_pk) | Q(parent=self.main_pk)).select_related()
                 parents = []
@@ -263,6 +291,11 @@ class NodeSearch(SearchView):
                 nodes = parents + [('main', main.votes, main)] + children
                 node_page = True
             except AttributeError:
+                '''
+                This is just the search front page,
+                could return better content based on votes/capped date,
+                product hunt style
+                '''
                 nodes = [('main', node.votes, node) for node in Node.objects.filter(is_question=True)[:20]]
 
             node_set = set()
@@ -293,6 +326,12 @@ class LinkVoteView(AjaxResponseMixin, UpdateView):
         return "/search/" + str(self.kwargs.get("parent_pk"))
 
     def form_valid(self, form):
+        '''
+        This vote up a connection,
+        that means on a node page it will be closer, 
+        showing two nodes are close, an answer is a good 
+        answer to a question
+        '''
         form = form.save(commit=False)
         direction = self.kwargs.get("direction")
         if direction == 'up':
@@ -336,6 +375,11 @@ class NodeVoteView(AjaxResponseMixin, UpdateView):
         return "/search/" + str(self.kwargs.get("parent_pk"))
 
     def form_valid(self, form):
+        '''
+        this votes up a node itself. Like it is just
+        a generally good question. It maintains a consisistant ui,
+        and it makes it possible to sort the front page
+        '''
         form = form.save(commit=False)
         direction = self.kwargs.get("direction")
         if direction == 'up':
@@ -381,6 +425,10 @@ class AlternateVoteView(AjaxResponseMixin, UpdateView):
         return "/search/" + str(self.kwargs.get("parent_pk"))
 
     def form_valid(self, form):
+        '''
+        pretty much the same as LinkVote, vote alternates so when
+        user clicks "similar" they get the most relevant ones
+        '''
         form = form.save(commit=False)
         direction = self.kwargs.get("direction")
         if direction == 'up':
@@ -502,6 +550,12 @@ class NodeDelete(AjaxResponseMixin, DeleteView):
     success_url = "/search/"
 
     def delete (self, request, *args, **kwargs):
+        '''
+        delete a node. If it has alternates, take
+        the most popular alternate and make all the 
+        original node for the rest of the alternates so
+        they don't disappear []**** -> []***
+        '''
         self.object = self.get_object()
         original = self.object.originals.all()
         original_set = self.object.node_originals.all()
@@ -557,6 +611,12 @@ class AlternateDetail(DetailView):
     context_object_name = "node"
 
     def get_object(self):
+        '''
+        make a predictable list of a node and all it's
+        alternates, then retrieve whatever place is requested
+        in that list so "similar" button just needs to know 
+        what original node and what place in list
+        '''
         pk = int(self.kwargs.get("pk"))
         node = Node.objects.get(pk=pk)
         self.place = int(self.kwargs.get("place"))
