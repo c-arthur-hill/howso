@@ -1,0 +1,8 @@
+<h2>{{ form_title }}</h2>
+<form method="POST" action="">
+    {{ form.errors }}
+    {% csrf_token %}
+    <br>
+    <input class="form_submit" type="submit"/>
+    <button class="form_cancel">Cancel</button>
+</form>

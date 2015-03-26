@@ -1,0 +1,84 @@
+                <div class="node hidden {% if node.is_question == False %}approach{% else %}question{% endif %}">
+                    <div class="vote">
+                        {% if place == 'alternate' %}
+                            <div class="add_vote">
+                                <a href="{{ SITE_URL }}/alternate/vote/up/{{ parent_pk }}/{{ node.pk }}/"></a>
+                                <object type="image/svg+xml" data="{{ STATIC_URL }}up_arrow.svg"></object>
+                            </div>
+                            <div class="total_votes">
+                                <p>{{ total_votes }}</p>
+                            </div>
+                            <div class="add_vote">
+                                <a href="{{ SITE_URL }}/alternate/vote/down/{{ parent_pk }}/{{ node.pk }}/"></a>
+                                <object type="image/svg+xml" data="{{ STATIC_URL }}down_arrow.svg"></object>
+                            </div>
+                        {% else %}
+                            <div class="add_vote">
+                                <a href="{{ SITE_URL }}{% if place == 'child' %}/link/vote/up/{{ parent_pk }}/{{ node.pk }}/{% elif place == 'parent' %}/link/vote/up/{{ node.pk }}/{{ parent_pk }}/{% else %}/node/vote/up/{{ node.pk }}/{% endif %}"></a>
+                                <object type="image/svg+xml" data="{{ STATIC_URL }}up_arrow.svg"></object>
+                            </div>
+                            <div class="total_votes">
+                                <p>{{ total_votes }}</p>
+                            </div>
+                            <div class="add_vote">
+                                <a href="{{ SITE_URL }}{% if place == 'child' %}/link/vote/down/{{ parent_pk }}/{{ node.pk }}/{% elif place == 'parent' %}/link/vote/down/{{ node.pk }}/{{ parent_pk }}/{% else %}/node/vote/down/{{ node.pk }}/{% endif %}"></a>
+                                <object type="image/svg+xml" data="{{ STATIC_URL }}down_arrow.svg"></object>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="node_body">
+                        <div class="id">
+                            <label>{% if node.is_question %}Question {% else %}Approach {% endif %}</label>
+                        </div>
+                        <div class="relative body">
+                            <a class="body_link" href="{{ SITE_URL }}/search/{{ node.pk }}/">{{ node.body }}</a>
+                        </div>
+                        {% if node.url %}
+                        <div class="url">
+                            <a href="{{ node.url }}">{{ node.url | slice:":30" }}...</a>
+                        </div>
+                        {% endif %}
+                        {% if node.get_avatar_thumb_url and node.img %}
+                        <div class="thumbnail_img">
+                            <a class="popup_link" href="{{ node.img.url }}"><img src="{{ node.get_avatar_thumb_url }}" alt="" /></a>
+                        </div>
+                        {% endif %}
+                        <div class="node_icons relative">
+                            <a class="show_alt" href="{{ SITE_URL }}/alternate/{{ parent_pk }}/{{ alt_place }}/"><button>Similar</button></a>
+                            <a class="add" href="{{ SITE_URL }}/nodes/add/{{ node.pk }}/"><button>Add</button></a>
+                            <a class="edit" href="{{ SITE_URL }}/nodes/edit/{{ node.pk }}/1/"><button>Edit</button></a>
+                        </div>
+                        {% if alt_place %}
+                        <div class="add_options drop_menu">
+                            <ul>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/alternate/{{ parent_pk }}/">Write Similar</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/original/{{ parent_pk }}/">Write {% if node.is_question %}Approach{% else %}Question{% endif %}</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/link/node/{{ parent_pk }}/">Connect {% if node.is_question %}Approach{% else %}Question{% endif %}</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/link/alternate/{{ parent_pk }}/">Connect Alternate</a></li>
+                            </ul>
+                        </div>
+                        <div class="edit_options drop_menu">
+                            <ul>
+                                <li><a class="show_form" href="{{ SITE_URL }}/update/alternate/{{ node.pk }}/{{ parent_pk }}/">Modify</a><li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/delete/alternate/{{ node.pk }}/{{ parent_pk }}/">Delete</a></li>
+                            <ul>
+                        </div>
+                        {% else %}
+                        <div class="add_options drop_menu">
+                            <ul>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/alternate/{{ node.pk }}/">Add Alternate</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/original/{{ node.pk }}/">Add {% if node.is_question %}Approach{% else %}Question{% endif %}</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/link/{{ node.pk }}/">Connect {% if node.is_question %}Approach{% else %}Question{% endif %}</a></li>
+                            </ul>
+                        </div>
+                        <div class="edit_options drop_menu">
+                            <ul>    
+                                <li><a class="show_form" href="{{ SITE_URL }}/update/node/{{ node.pk }}/{{ parent_pk }}/">Modify</a></li>
+                                <li><a class="show_form" href="{{ SITE_URL }}/delete/node/{{ node.pk }}">Delete</a></li>
+                            <ul>
+                        </div>
+                        {% endif %}
+                        <div class="form_div">
+                        </div>
+                    </div>
+                </div>

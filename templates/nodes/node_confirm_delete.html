@@ -1,0 +1,6 @@
+    <h2>Delete Node {{ node.pk }}</h2>
+    <form method="POST" action="{{ current_path }}">
+        {% csrf_token %}
+        <input type="submit" value="Yes" class="form_submit"/>
+        <button class="form_cancel">No</button>
+    </form>

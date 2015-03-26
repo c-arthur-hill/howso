@@ -1,0 +1,243 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+28   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts at interval 0
+33   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts/solr-jetty-context.xml
+1326 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1438 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1463 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1464 [main] INFO  org.apache.solr.core.SolrResourceLoader  – solr home defaulted to 'solr/' (could not find system property or JNDI)
+1464 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: 'solr/'
+1617 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/solr.xml
+1774 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+1789 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1526572274
+1789 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=solr/]
+1810 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1811 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1814 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1815 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1817 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1817 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1817 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1817 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1817 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+2092 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+2097 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2098 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2099 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+2136 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+2143 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
+2144 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+2145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/'
+2256 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2259 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2260 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+2260 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+2266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xz-1.4.jar' to classloader
+2266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+2266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+2267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+2267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+2267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+2267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/rome-0.9.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+2268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+2269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2273 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+2273 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+2273 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-cell-4.10.2.jar' to classloader
+2275 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+2275 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+2279 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+2280 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-clustering-4.10.2.jar' to classloader
+2280 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2281 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2281 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-langid-4.10.2.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-velocity-4.10.2.jar' to classloader
+2539 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+2546 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.2
+2819 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+2834 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+2877 [coreLoadExecutor-5-thread-1] ERROR org.apache.solr.core.Config  – Exception during parsing file: schema:org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+2890 [coreLoadExecutor-5-thread-1] ERROR org.apache.solr.core.CoreContainer  – Error creating core [collection1]: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+org.apache.solr.common.SolrException: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:595)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at org.apache.solr.core.Config.<init>(Config.java:149)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	... 12 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	... 14 more
+2902 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example
+2902 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+2955 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  – FAILED SocketConnector@0.0.0.0:8983: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.eclipse.jetty.server.bio.SocketConnector.newServerSocket(SocketConnector.java:96)
+	at org.eclipse.jetty.server.bio.SocketConnector.open(SocketConnector.java:85)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.bio.SocketConnector.doStart(SocketConnector.java:156)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:291)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1259)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:473)
+	at org.eclipse.jetty.start.Main.start(Main.java:615)
+	at org.eclipse.jetty.start.Main.main(Main.java:96)
+2955 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  – FAILED org.eclipse.jetty.server.Server@6f78ed09: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.eclipse.jetty.server.bio.SocketConnector.newServerSocket(SocketConnector.java:96)
+	at org.eclipse.jetty.server.bio.SocketConnector.open(SocketConnector.java:85)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.bio.SocketConnector.doStart(SocketConnector.java:156)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:291)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1259)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:473)
+	at org.eclipse.jetty.start.Main.start(Main.java:615)
+	at org.eclipse.jetty.start.Main.main(Main.java:96)
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:473)
+	at org.eclipse.jetty.start.Main.start(Main.java:615)
+	at org.eclipse.jetty.start.Main.main(Main.java:96)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.eclipse.jetty.server.bio.SocketConnector.newServerSocket(SocketConnector.java:96)
+	at org.eclipse.jetty.server.bio.SocketConnector.open(SocketConnector.java:85)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.bio.SocketConnector.doStart(SocketConnector.java:156)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:291)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1259)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1182)
+	... 7 more
+
+Usage: java -jar start.jar [options] [properties] [configs]
+       java -jar start.jar --help  # for more information

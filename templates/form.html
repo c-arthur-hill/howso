@@ -1,0 +1,13 @@
+{% extends ajax|yesno:"null.html,nav.html" %}
+{% block sub_content %}
+    {% if not ajax %}
+    <div class="form_div">
+    {% endif %}
+    {% block form_content %}
+    {% endblock %}
+    {% if not ajax %}
+    </div>
+    {% endif %}
+{% endblock %}
+
+

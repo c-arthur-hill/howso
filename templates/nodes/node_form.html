@@ -1,0 +1,19 @@
+{% extends "form.html" %}
+{% block ask %}id="current"{% endblock %}
+{% block form_content %}
+<h2>{{ form_title }}</h2>
+<form method="POST" class="add_node_form" action="{{ current_path }}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="__all___error {% if user.is_authenticated %}hidden{% endif %}">{% if not user.is_authenticated %}Login Required{% endif %}</div>
+    {% for field in form %}
+        <label>{{ field.label }}</label>
+        <div class="error {{ field.label|lower }}_error"></div>
+        {{ field }}
+    {% endfor %}
+    <input type="hidden" class="parent_pk" name="parent_pk" value="{{ parent_pk }}">
+    <input type="hidden" class="parent_is_question" name="parent_is_question" value="{{ parent_is_question }}">
+    <br>
+    <input type="submit" class="form_submit"></input>
+    <button class="form_cancel">Cancel</button>
+</form>
+{% endblock %}

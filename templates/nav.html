@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="middle_53">
+        <header>
+            <div id="logo_div">
+                <a href="/" id="logo">howso.co</a>
+            </div>
+            <div id="search_form_parent">
+                <form id="search_form" method="GET" action="/search/">
+                    <input id="id_q" name="q" type="search" />
+                    <input id="search_submit" type="submit" value="Search Questions">
+                </form>
+            </div>
+        </header>        
+        <nav>
+            <ul>
+                <li {% block home %}{% endblock %}><a href="{{ SITE_URL }}/">Home</a></li>
+                <li {% block newest %}{% endblock %}><a href="{{ SITE_URL }}/search/">Newest</a></li>
+                {% if user.is_authenticated %}
+                <li {% block ask %}{% endblock %}><a href="{{ SITE_URL }}/create/original/">Ask</a></li>
+                <li {% block logout %}{% endblock %}><a href="{{ SITE_URL }}/user/logout/">Logout</a></li>
+                {% else %}
+                <li {% block login %}{% endblock %}><a href="{{ SITE_URL }}/user/login/">Login</a></li>
+                <li {% block register %}{% endblock %}><a href="{{ SITE_URL }}/user/register/">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    {% block sub_content %}
+    {% endblock %}
+    </div>
+{% endblock %}

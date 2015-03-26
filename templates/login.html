@@ -1,0 +1,10 @@
+{% extends "form.html" %}
+{% block login %}id="current"{% endblock %}
+{% block form_content %}
+    <h2>Login</h2>
+    <form method="POST" action="/user/login/">
+        {% csrf_token %}
+        {{ form }}
+        <br><input class="form_submit" type="submit">
+    </form>
+{% endblock %}

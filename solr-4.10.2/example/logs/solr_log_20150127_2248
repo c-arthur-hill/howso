@@ -1,0 +1,320 @@
+INFO  - 2015-01-27 22:46:36.107; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2015-01-27 22:46:36.142; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts at interval 0
+INFO  - 2015-01-27 22:46:36.146; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts/solr-jetty-context.xml
+INFO  - 2015-01-27 22:46:37.372; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2015-01-27 22:46:37.494; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2015-01-27 22:46:37.515; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-01-27 22:46:37.515; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+INFO  - 2015-01-27 22:46:37.516; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/'
+INFO  - 2015-01-27 22:46:37.642; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/solr.xml
+INFO  - 2015-01-27 22:46:37.774; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+INFO  - 2015-01-27 22:46:37.784; org.apache.solr.core.CoreContainer; New CoreContainer 1105372483
+INFO  - 2015-01-27 22:46:37.784; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/]
+INFO  - 2015-01-27 22:46:37.803; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2015-01-27 22:46:37.803; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2015-01-27 22:46:37.809; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2015-01-27 22:46:37.810; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2015-01-27 22:46:37.814; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2015-01-27 22:46:37.814; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2015-01-27 22:46:37.814; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2015-01-27 22:46:37.815; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2015-01-27 22:46:37.815; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2015-01-27 22:46:38.073; org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2015-01-27 22:46:38.076; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-01-27 22:46:38.077; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-01-27 22:46:38.078; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2015-01-27 22:46:38.107; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+INFO  - 2015-01-27 22:46:38.116; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
+INFO  - 2015-01-27 22:46:38.116; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2015-01-27 22:46:38.118; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/'
+INFO  - 2015-01-27 22:46:38.223; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-01-27 22:46:38.225; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.225; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-27 22:46:38.225; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2015-01-27 22:46:38.225; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-01-27 22:46:38.225; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.226; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.230; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.230; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xz-1.4.jar' to classloader
+INFO  - 2015-01-27 22:46:38.230; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.230; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2015-01-27 22:46:38.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2015-01-27 22:46:38.233; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.233; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.233; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2015-01-27 22:46:38.233; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.233; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2015-01-27 22:46:38.240; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.240; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-01-27 22:46:38.240; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.241; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2015-01-27 22:46:38.241; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.242; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-cell-4.10.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.246; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.246; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.247; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-01-27 22:46:38.248; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-clustering-4.10.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.249; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-01-27 22:46:38.249; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-01-27 22:46:38.249; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-langid-4.10.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.251; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-01-27 22:46:38.251; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-01-27 22:46:38.252; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-01-27 22:46:38.252; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-01-27 22:46:38.253; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-velocity-4.10.2.jar' to classloader
+INFO  - 2015-01-27 22:46:38.575; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-01-27 22:46:38.582; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.2
+INFO  - 2015-01-27 22:46:38.845; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-01-27 22:46:38.866; org.apache.solr.schema.IndexSchema; Reading Solr Schema from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+ERROR - 2015-01-27 22:46:38.913; org.apache.solr.common.SolrException; Exception during parsing file: schema:org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+ERROR - 2015-01-27 22:46:38.922; org.apache.solr.core.CoreContainer; Error creating core [collection1]: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+org.apache.solr.common.SolrException: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:595)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at org.apache.solr.core.Config.<init>(Config.java:149)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	... 12 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	... 14 more
+INFO  - 2015-01-27 22:46:38.936; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example
+INFO  - 2015-01-27 22:46:38.937; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-01-27 22:46:38.990; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+ERROR - 2015-01-27 22:46:54.511; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:745)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:307)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:595)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at org.apache.solr.core.Config.<init>(Config.java:149)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	... 12 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	... 14 more
+
+ERROR - 2015-01-27 22:46:54.786; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: SolrCore 'collection1' is not available due to init failure: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:745)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:307)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:953)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1014)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core collection1: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:489)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:255)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.. Schema file is /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:595)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:90)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at org.apache.solr.core.Config.<init>(Config.java:149)
+	at org.apache.solr.core.Config.<init>(Config.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:445)
+	... 12 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/schema.xml; lineNumber: 184; columnNumber: 1; XML document structures must start and end within the same entity.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:903)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:563)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1391)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1774)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1426)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2823)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.apache.solr.core.Config.<init>(Config.java:135)
+	... 14 more
+
+INFO  - 2015-01-27 22:48:48.759; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2015-01-27 22:48:48.760; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr-webapp/webapp/},/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/webapps/solr.war
+INFO  - 2015-01-27 22:48:49.761; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1105372483
+INFO  - 2015-01-27 22:48:49.763; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr-webapp/webapp/},/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/webapps/solr.war

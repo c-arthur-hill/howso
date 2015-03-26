@@ -17,7 +17,7 @@ def bool_env(val):
     return True if os.environ.get(val, False) == "True" else False
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
-#AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME")
+AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME")
 DB_NAME = os.environ.get("DB_NAME")
 DB_USER = os.environ.get("DB_USER")
 DB_PASSWORD = os.environ.get("DB_PASSWORD")
@@ -26,15 +26,15 @@ DB_PORT = os.environ.get("DB_PORT")
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCES_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_CALLING_FORMAT = os.environ.get("AWS_CALLING_FORMAT")
-#SITE_URL = 'http://sciguides.com/'
+SITE_URL = 'howso.co'
 STATICFILES_STORAGE = os.environ.get("S3_STORAGE")
 DEFAULT_FILE_STORAGE = os.environ.get("S3_STORAGE")
 DEBUG = bool_env("DEBUG")
-STATIC_URL = 'https://s3-us-west-2.amazonaws.com/creatorguides/'
-#LOGIN_URL = "/users/login/"
-#LOGIN_REDIRECT_URL = "/guides/"
-#AUTH_USER_MODEL = 'auth.user'
-
+STATIC_URL = 'http://s3-us-west-2.amazonaws.com/creatorguides/'
+AWS_S3_SECURE_URLS = False
+AWS_QUERYSTRING_AUTH = False
+AUTH_USER_MODEL = 'custom_users.CustomUser'
+LOGIN_REDIRECT_URL = "/search/"
 # Quick-start development settings - unsuitable for productionN
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -42,7 +42,7 @@ STATIC_URL = 'https://s3-us-west-2.amazonaws.com/creatorguides/'
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['howso.co', 'www.howso.co']
 
 
 # Application definition
@@ -54,15 +54,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'haystack',
-    'core',
-    'stripe_transactions',
-    'addresses',
-    'events',
-    'cities_light',
-    'phonenumber_field',
-    'listings',
-    'users',
+    'nodes',
+    'custom_users',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,9 +69,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'lc1.urls'
+ROOT_URLCONF = 'lg1.urls'
 
-WSGI_APPLICATION = 'lc1.wsgi.application'
+WSGI_APPLICATION = 'lg1.wsgi.application'
 
 
 # Database
@@ -96,8 +91,8 @@ DATABASES = {
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
-        'URL': 'http://127.0.0.1:8983/solr',
-    }
+        'URL': 'http://127.0.0.1:8983/solr'
+    },
 }
 
 # Internationalization
@@ -115,4 +110,15 @@ USE_TZ = True
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.contrib.messages.context_processors.messages",
+    "django.core.context_processors.static",
+    "lg1.context_processors.get_current_path",
+    "lg1.context_processors.request_is_ajax", 
 )

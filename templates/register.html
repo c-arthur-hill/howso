@@ -1,0 +1,10 @@
+{% extends "form.html" %}
+{% block register %}id="current"{% endblock %}
+{% block form_content %}
+    <h2>Register</h2>
+    <form method="POST" action="/user/register/">
+        {% csrf_token %}
+        {{ form }}
+        <br><input class="form_submit" type="submit">
+    </form>
+{% endblock %}      

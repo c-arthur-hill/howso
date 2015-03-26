@@ -1,0 +1,67 @@
+{% extends "nav.html" %}
+{% block newest %}id="current"{% endblock %}
+{% block sub_content %}
+        <div class="node_list">
+            {% for place, votes, node in nodes %}
+                <div class="node {% if node.is_question == False %}approach{% else %}question{% endif %}">
+                    <div class="vote">
+                        <div class="vote_error">
+                            <p></p>
+                        </div>
+                        <div class="add_vote">
+                            <a href="{{ SITE_URL }}{% if place == 'child' %}/link/vote/up/{{ main }}/{{ node.pk }}/{% elif place == 'parent' %}/link/vote/up/{{ node.pk }}/{{ main }}/{% else %}/node/vote/up/{{ node.pk }}/{% endif %}"></a>
+                            <object type="image/svg+xml" data="{{ STATIC_URL }}up_arrow.svg"></object>
+                        </div>
+                        <div class="total_votes">
+                            <p>{{ votes }}</p>
+                        </div>
+                        <div class="add_vote">
+                            <a href="{{ SITE_URL }}{% if place == 'child' %}/link/vote/down/{{ main }}/{{ node.pk }}/{% elif place == 'parent' %}/link/vote/down/{{ node.pk }}/{{ main }}/{% else %}/node/vote/down/{{ node.pk }}/{% endif %}"></a>
+                            <object type="image/svg+xml" data="{{ STATIC_URL }}down_arrow.svg"></object>
+                        </div>
+                    </div>
+                    <div class="node_body">
+                        <div class="id">
+                            <label>{% if node.is_question %}Question {% else %}Approach {% endif %}</label>
+                        </div>
+                        <div class="relative body">
+                            <a {% if node.pk == main %}id="#"{% endif %} class="body_link" href="{{ SITE_URL }}/search/{{ node.pk }}/#">{{ node.body }}</a>
+                        </div>
+                        {% if node.url %}
+                        <div class="url">
+                            <a href="{{ node.url }}">{{ node.url | slice:":30" }}...</a>
+                        </div>
+                        {% endif %}
+                        {% if node.get_avatar_thumb_url and node.img %}
+                        <div class="thumbnail_img">
+                            <a class="popup_link" href="{{ node.img.url }}"><img src="{{ node.get_avatar_thumb_url }}" alt="" /></a>
+                        </div>
+                        {% endif %}
+                        <div class="node_icons relative">
+                            <a class="show_alt" href="{{ SITE_URL }}/alternate/{{ node.pk }}/1/"><button>Similar</button></a>
+                            <a class="add" href="{{ SITE_URL }}/nodes/add/{{ node.pk }}/"><button>Add</button></a>
+                            <a class="edit" href="{{ SITE_URL }}/nodes/edit/{{ node.pk }}/1/"><button>Edit</button></a>
+                        </div>
+                        <div class="add_options drop_menu">
+                            <ul>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/alternate/{{ node.pk }}/">Write Similar</a>
+                                <li><a class="show_form" href="{{ SITE_URL }}/create/original/{{ node.pk }}/">Write {% if node.is_question %}Approach{% else %}Question{% endif %}</a>
+                                <li><a class="show_form" href="{{ SITE_URL }}/link/node/{{ node.pk }}/">Connect {% if node.is_question %}Approach{% else %}Question{% endif %}</a>
+                                <li><a class="show_form" href="{{ SITE_URL }}/link/alternate/{{ node.pk }}/">Connect Similar</a>
+                            </ul>
+                        </div>
+                        <div class="edit_options drop_menu">
+                            <ul>
+                                <li><a class="show_form" href="{{ SITE_URL }}/update/node/{{ node.pk }}/{% if place == 'parent' or place == 'child' %}{{ parent_pk }}/{% endif %}">Modify</a>
+                                <li><a class="show_form" href="{{ SITE_URL }}/delete/node/{{ node.pk }}/{% if place == 'parent' or place == 'child' %}{{ parent_pk }}/{% endif %}">Delete</a>
+                            </ul>
+                        </div>
+                        <div class="form_div">
+                        </div>
+                    </div>
+                </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
