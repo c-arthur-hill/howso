@@ -251,6 +251,10 @@ class NodeList(ListView):
     model=Node
     template_name = "search/search.html"
 
+    @method_decorator(login_required)
+    def dispatch(self, request, *args, **kwargs):        
+        return super(NodeList, self).dispatch(request, *args, **kwargs)
+
     def get_queryset(self):
         main_pk = int(self.kwargs.get("pk"))
         main = Node.objects.get(pk=main_pk)

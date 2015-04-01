@@ -33,16 +33,16 @@ DEBUG = bool_env("DEBUG")
 STATIC_URL = 'http://s3-us-west-2.amazonaws.com/creatorguides/'
 AWS_S3_SECURE_URLS = False
 AWS_QUERYSTRING_AUTH = False
+LOGIN_URL = "/user/login/"
 AUTH_USER_MODEL = 'custom_users.CustomUser'
-LOGIN_REDIRECT_URL = "/search/"
 # Quick-start development settings - unsuitable for productionN
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
-
+SITE_ID = 1
+DOMAIN = "howso.co"
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['howso.co', 'www.howso.co']
+ALLOWED_HOSTS = ['projects.howso.co', 'www.projects.howso.co', 'howso.co', 'www.howso.co']
 
 
 # Application definition
@@ -54,13 +54,16 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'storages',
     'haystack',
     'nodes',
     'custom_users',
+    'subdomains',
 )
 
 MIDDLEWARE_CLASSES = (
+    'subdomains.middleware.SubdomainURLRoutingMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,6 +73,11 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'lg1.urls'
+
+SUBDOMAIN_URLCONFS = {
+    'projects':'nodes.urls',
+    }
+
 
 WSGI_APPLICATION = 'lg1.wsgi.application'
 
