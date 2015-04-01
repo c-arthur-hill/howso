@@ -2,235 +2,199 @@ OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory (errno = 22).
 OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory (errno = 1).
 OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory (errno = 1).
 0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
-34   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts at interval 0
-39   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts/solr-jetty-context.xml
-1605 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-1730 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
-1758 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
-1758 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
-1759 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/'
-1901 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/solr.xml
-2085 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
-2103 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1105372483
-2103 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/]
-2124 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
-2124 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
-2127 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
-2127 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
-2132 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
-2132 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
-2132 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
-2132 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
-2133 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
-2504 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
-2506 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-2506 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-2507 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
-2539 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
-2549 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
-2550 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
-2552 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/'
-2667 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
-2671 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
-2671 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
-2672 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
-2672 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
-2672 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
-2672 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
-2679 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
-2679 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xz-1.4.jar' to classloader
-2679 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
-2679 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
-2679 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
-2680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/icu4j-53.1.jar' to classloader
-2680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
-2680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
-2680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
-2680 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
-2681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-core-1.5.jar' to classloader
-2681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
-2681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/rome-0.9.jar' to classloader
-2681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
-2681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-3.10.1.jar' to classloader
-2682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
-2682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
-2682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
-2682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
-2682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
-2687 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
-2688 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jdom-1.0.jar' to classloader
-2690 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-cell-4.10.2.jar' to classloader
-2696 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
-2696 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
-2696 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
-2697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
-2697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
-2697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
-2697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
-2697 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
-2698 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-clustering-4.10.2.jar' to classloader
-2699 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
-2699 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
-2700 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-langid-4.10.2.jar' to classloader
-2701 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
-2702 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
-2702 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
-2702 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-1.7.jar' to classloader
-2703 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-velocity-4.10.2.jar' to classloader
-3312 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
-3319 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.2
-3601 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
-3619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
-3695 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [collection1] Schema name=default
-3803 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
-3813 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
-3817 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
-3820 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
-3942 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
-3943 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is AND
-3944 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
-4110 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'collection1' using configuration from instancedir /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
-4126 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
-4132 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Opening new SolrCore at /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/, dataDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/
-4133 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@2fbac9d0
-4150 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
-4150 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
-4162 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data
-4168 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index/
-4169 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index
-4182 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
-4182 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
-4182 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
-4185 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
-4185 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
-4270 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
-4278 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
-4279 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
-4280 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
-4280 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
-4286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
-4287 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
-4289 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
-4290 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
-4295 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
-4297 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
-4297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
-4297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-4298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
-4298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-4298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
-4298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-4298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
-4308 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
-4311 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
-4313 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
-4323 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
-4323 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggest: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
-4324 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-4325 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
-4325 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
-4325 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
-4341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-4342 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-4343 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-4343 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-4344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-4372 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
-4373 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: if uncommited for 3000ms; 
-4414 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_i,generation=18}
-4414 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 18
-4452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@4d151931[collection1] main
-4458 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
-4459 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf}
-4474 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
-4477 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
-4478 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
-4478 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
-4478 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
-4483 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-4489 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
-4490 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Initializing SuggestComponent
-4491 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-4504 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
-4505 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/elevate.xml
-4534 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
-4535 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@4d151931[collection1] main{StandardDirectoryReader(segments_i:42:nrt _9(4.10.2):C20/9:delGen=1 _a(4.10.2):C16)}
-4588 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=52 
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Loading suggester index for: mySuggester
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – reload()
-4589 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – build()
-4619 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@4d151931[collection1] main{StandardDirectoryReader(segments_i:42:nrt _9(4.10.2):C20/9:delGen=1 _a(4.10.2):C16)}
-4623 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: collection1
-4631 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example
-4631 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
-4691 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
-16143 [qtp550190826-15] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@7b0e6f6e[collection1] realtime
-16145 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-16155 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_i,generation=18}
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_j,generation=19}
-16155 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 19
-16156 [qtp550190826-15] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@10e54d0e[collection1] main
-16157 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@10e54d0e[collection1] main{StandardDirectoryReader(segments_i:44:nrt)}
-16157 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-16160 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@10e54d0e[collection1] main{StandardDirectoryReader(segments_i:44:nrt)}
-16162 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-16163 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {deleteByQuery=*:* (-1496557714816368640),commit=} 0 78
-16170 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-16170 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
-16171 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-16171 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-16171 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-16171 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
-16172 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-16172 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-16172 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {optimize=,commit=} 0 2
-16300 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-16349 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_j,generation=19}
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_k,generation=20}
-16350 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 20
-16353 [qtp550190826-15] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@78330b87[collection1] main
-16354 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@78330b87[collection1] main{StandardDirectoryReader(segments_i:46:nrt _b(4.10.2):C15)}
-16354 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-16358 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@78330b87[collection1] main{StandardDirectoryReader(segments_i:46:nrt _b(4.10.2):C15)}
-16358 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-16358 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {add=[nodes.node.1 (1496557714967363584), nodes.node.2 (1496557714990432256), nodes.node.3 (1496557714991480832), nodes.node.6 (1496557714993577984), nodes.node.7 (1496557714994626560), nodes.node.8 (1496557714995675136), nodes.node.9 (1496557714996723712), nodes.node.10 (1496557714997772288), nodes.node.11 (1496557714998820864), nodes.node.12 (1496557714999869440), ... (15 adds)],commit=} 0 101
-1683131 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=7 
-1846409 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=0 
-1849713 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=0 
-1866565 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-1926222 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-1966969 [qtp550190826-17] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2116379 [qtp550190826-17] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=0 
-2128048 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.45)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2151566 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2157650 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.45)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2233439 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2386304 [qtp550190826-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2522811 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=1 
-2576526 [qtp550190826-19] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select/ params={fl=*+score&start=0&q=(3.39)&wt=json&fq=django_ct:(nodes.node)&rows=20} hits=1 status=0 QTime=0 
-91165370 [qtp550190826-18] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-91165421 [qtp550190826-18] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_k,generation=20}
+55   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts at interval 0
+60   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/contexts/solr-jetty-context.xml
+1366 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1493 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1513 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1514 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+1514 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/'
+1645 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/solr.xml
+1786 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+1801 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1105372483
+1801 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/]
+1824 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1824 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1828 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1828 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1836 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1836 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1837 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1837 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1837 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+2110 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+2112 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2113 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2114 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+2151 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr
+2161 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
+2162 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+2164 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/'
+2274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+2276 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2277 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2277 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+2277 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2277 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2277 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+2283 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+2283 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xz-1.4.jar' to classloader
+2283 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+2283 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2283 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+2284 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/rome-0.9.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+2285 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+2286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+2291 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+2291 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2291 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+2291 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+2291 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2293 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-cell-4.10.2.jar' to classloader
+2295 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+2296 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2296 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+2297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+2297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+2297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+2297 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+2298 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-clustering-4.10.2.jar' to classloader
+2303 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2303 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2304 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-langid-4.10.2.jar' to classloader
+2305 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+2305 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2305 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2305 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2306 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/project_lg1/lg1/solr-4.10.2/dist/solr-velocity-4.10.2.jar' to classloader
+2642 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+2656 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.2
+2937 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+2956 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/schema.xml
+3028 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [collection1] Schema name=default
+3141 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
+3148 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
+3151 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
+3154 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrResourceLoader  – Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
+3286 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – default search field in schema is text
+3287 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – query parser default operator is AND
+3287 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+3449 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'collection1' using configuration from instancedir /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/
+3464 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+3470 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Opening new SolrCore at /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/, dataDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/
+3471 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@2fbac9d0
+3488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+3489 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+3500 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data
+3506 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index/
+3506 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index
+3519 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+3519 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+3520 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+3523 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+3523 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+3609 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+3616 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+3617 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+3618 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+3619 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+3625 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+3626 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+3628 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+3629 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
+3639 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+3641 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+3641 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+3641 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+3641 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+3642 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+3642 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+3642 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+3642 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+3644 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+3651 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+3653 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggest: solr.SearchHandler
+3663 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+3664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+3664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3664 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+3681 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3682 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3683 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3684 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3685 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3722 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+3723 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: if uncommited for 3000ms; 
+3765 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
 	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_l,generation=21}
-91165422 [qtp550190826-18] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 21
-91165426 [qtp550190826-18] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@4caabc8c[collection1] main
-91165427 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@4caabc8c[collection1] main{StandardDirectoryReader(segments_i:49:nrt _b(4.10.2):C15/10:delGen=1 _c(4.10.2):C17)}
-91165427 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-91165432 [qtp550190826-18] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-91165433 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@4caabc8c[collection1] main{StandardDirectoryReader(segments_i:49:nrt _b(4.10.2):C15/10:delGen=1 _c(4.10.2):C17)}
-91165434 [qtp550190826-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {add=[nodes.node.1 (1496653291678859264), nodes.node.6 (1496653291682004992), nodes.node.7 (1496653291684102144), nodes.node.9 (1496653291685150720), nodes.node.10 (1496653291688296448), nodes.node.13 (1496653291689345024), nodes.node.14 (1496653291698782208), nodes.node.15 (1496653291700879360), nodes.node.16 (1496653291707170816), nodes.node.17 (1496653291715559424), ... (17 adds)],commit=} 0 119
+3765 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 21
+3802 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@73c39502[collection1] main
+3808 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
+3808 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf}
+3817 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
+3820 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf
+3820 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+3820 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+3821 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+3826 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+3832 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+3833 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Initializing SuggestComponent
+3834 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+3847 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+3849 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/conf/elevate.xml
+3879 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+3879 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@73c39502[collection1] main{StandardDirectoryReader(segments_l:49:nrt _b(4.10.2):C15/10:delGen=1 _c(4.10.2):C17)}
+3939 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=58 
+3939 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+3939 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+3939 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+3940 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Loading suggester index for: mySuggester
+3940 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – reload()
+3940 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – build()
+3975 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@73c39502[collection1] main{StandardDirectoryReader(segments_l:49:nrt _b(4.10.2):C15/10:delGen=1 _c(4.10.2):C17)}
+3980 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: collection1
+3987 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/ubuntu/project_lg1/lg1/solr-4.10.2/example
+3987 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+4051 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+13231 [qtp550190826-15] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@131c8e88[collection1] realtime
+13233 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+13242 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_l,generation=21}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/project_lg1/lg1/solr-4.10.2/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_m,generation=22}
+13242 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 22
+13243 [qtp550190826-15] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@1d93e050[collection1] main
+13244 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@1d93e050[collection1] main{StandardDirectoryReader(segments_l:51:nrt)}
+13245 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+13247 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@1d93e050[collection1] main{StandardDirectoryReader(segments_l:51:nrt)}
+13248 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+13250 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {deleteByQuery=*:* (-1497198656152928256),commit=} 0 72
+13256 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+13257 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
+13257 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+13258 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+13258 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+13258 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
+13258 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+13258 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+13259 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {optimize=,commit=} 0 2

@@ -19,6 +19,7 @@ class Node (models.Model):
     originals = models.ManyToManyField('self', null=True, blank=True, through='AlternateConnection', symmetrical=False, related_name="node_originals")
     is_question = models.BooleanField(default=True)
     votes = models.BigIntegerField(default=0)
+    is_top = models.BooleanField(default=False)
 
     def __unicode__(self):
         return str(self.body)
@@ -87,6 +88,9 @@ class NodeConnection (models.Model):
 
     class Meta:
         ordering=('-votes',)
+
+    def __unicode__(self):
+        return str("Parent: " +  self.parent.body + " Child: " +  self.child.body)
 
 class AlternateConnection (models.Model):
     parent = models.ForeignKey(Node, related_name='alternate_parent')

@@ -134,7 +134,7 @@ class NodeCreate(AjaxResponseMixin, CreateView):
     form_class=NodeForm
 
     def get_success_url(self):
-        return "/search/" + str(self.object.pk) + "/"
+        return "/" + str(self.object.pk) + "/"
 
     def form_valid(self, form):
         node = form.save(commit=False) 
@@ -235,84 +235,42 @@ class AlternateCreate(AjaxResponseMixin, CreateView):
         kw['request'] = self.request # the trick!
         return kw
 
-class NodeSearch(SearchView):
- 	
-    def __init__(self, *args, **kwargs):
-        super(NodeSearch, self).__init__(*args, **kwargs)
-        self.form_class = SearchForm
+class ProjectList(ListView):
+    model=Node
+    template_name="search/search.html"
 
-    def __call__(self, request, main_pk=None):
-        if main_pk:
-            self.main_pk = int(main_pk)
-        return super(NodeSearch, self).__call__(request)
+    def get_queryset(self):
+        return [('main', n.votes, n) for n in Node.objects.filter(is_top=True)[:20]]
 
-
-    def create_response(self):
-        """
-        Generates the actual HttpResponse to send back to the user.
-        Taken straight from source, butt added nodes to context
-        """
-        (paginator, page) = self.build_page()
-        nodes = []
-        for o in page.object_list:
-            nodes.append(('main', o.object.votes, o.object))
-        context = {
-            'query': self.query,
-            'form': self.form,
-            'page': page,
-            'nodes': nodes,
-            'paginator': paginator,
-            'suggestion': None,
-        }
-        if self.results and hasattr(self.results, 'query') and self.results.query.backend.include_spelling:
-            context['suggestion'] = self.form.get_suggestion()
-        context.update(self.extra_context())
-        return render_to_response(self.template, context, context_instance=self.context_class(self.request))
-
-    def extra_context(self):
-        context = {}
-        node_page = False
-        if not self.results:
-            try:
-                '''
-                This is like a node page. It get alls the nodes related
-                to whatever the main node is. So like an approach and all the
-                questions that lead to it and that lead from it.
-                '''
-                main = Node.objects.get(pk=self.main_pk)
-                node_connections = NodeConnection.objects.filter(Q(child=self.main_pk) | Q(parent=self.main_pk)).select_related()
-                parents = []
-                children = []
-                for nc in node_connections:
-                    if nc.child_id == self.main_pk:
-                        parents.insert(0, ('parent', nc.votes, nc.parent))
-                    elif nc.parent_id == self.main_pk:
-                        children.append(('child', nc.votes, nc.child))
-                nodes = parents + [('main', main.votes, main)] + children
-                node_page = True
-            except AttributeError:
-                '''
-                This is just the search front page,
-                could return better content based on votes/capped date,
-                product hunt style
-                '''
-                nodes = [('main', node.votes, node) for node in Node.objects.filter(is_question=True)[:20]]
-
-            node_set = set()
-            for place, votes, node in nodes:
-                node_set.add(node.pk)
-            context["node_page"] = node_page
-            context["nodes"] = nodes
-            try:
-                context["main"] = self.main_pk
-            except AttributeError:
-                pass
+    def get_context_data(self, **kwargs):
+        context = super(ProjectList, self).get_context_data(**kwargs)
+        context["page_title"] = "Projects"
         return context
+        
+class NodeList(ListView):
+    model=Node
+    template_name = "search/search.html"
 
-    def get_results(self):
-        queryset = super(NodeSearch, self).get_results()
-        return queryset
-
+    def get_queryset(self):
+        main_pk = int(self.kwargs.get("pk"))
+        main = Node.objects.get(pk=main_pk)
+        node_connections = NodeConnection.objects.filter(Q(child=main_pk) | Q(parent=main_pk)).select_related()
+        parents = []
+        children = []
+        for nc in node_connections:
+            if nc.child_id == main_pk:
+                parents.insert(0, ('parent', nc.votes, nc.parent))
+            elif nc.parent_id == main_pk:
+                children.append(('child', nc.votes, nc.child))
+        nodes = parents + [('main', main.votes, main)] + children
+        return nodes
+ 
+    def get_context_data(self, **kwargs):
+        context = super(NodeList, self).get_context_data(**kwargs)
+        context["page_title"] = "Questions & Answers"
+        context["parent_pk"] = self.kwargs.get("pk")
+        return context
+ 
 class LinkVoteView(AjaxResponseMixin, UpdateView):
     model = NodeConnection
     form_class = EmptyLinkVote

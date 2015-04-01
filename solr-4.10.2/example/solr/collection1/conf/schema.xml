@@ -164,6 +164,8 @@
 
     <field name="modified" type="date" indexed="true" stored="true" multiValued="false" />
 
+    <field name="is_top" type="boolean" indexed="true" stored="true" multiValued="false" />
+
     <field name="is_question" type="boolean" indexed="true" stored="true" multiValued="false" />
 
   </fields>

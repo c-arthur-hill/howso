@@ -1,3 +1,6 @@
 from django.contrib import admin
+from nodes.models import Node, NodeConnection, AlternateConnection
 
-# Register your models here.
+admin.site.register(Node)
+admin.site.register(NodeConnection)
+admin.site.register(AlternateConnection)
