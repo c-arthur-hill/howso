@@ -15,7 +15,7 @@ class CustomUserAdmin(UserAdmin):
     # that reference the removed 'username' field
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        (_('Personal info'), {'fields': ('email')}),
+        (_('Personal info'), {'fields': ('email',)}),
         (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',
                                        'groups', 'user_permissions')}),
         (_('Important dates'), {'fields': ('last_login', 'date_joined')}),
@@ -35,10 +35,11 @@ class CustomUserAdmin(UserAdmin):
 class MyUserChangeForm(UserChangeForm):
     class Meta:
         model = get_user_model()
+        exclude = []
 
 class MyUserCreationForm(UserCreationForm):
     class Meta:
         model = get_user_model()
-
+        exclude = []
 
 admin.site.register(CustomUser, CustomUserAdmin)

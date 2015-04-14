@@ -37,13 +37,17 @@ LOGIN_URL = "/user/login/"
 AUTH_USER_MODEL = 'custom_users.CustomUser'
 # Quick-start development settings - unsuitable for productionN
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-SITE_ID = 1
 DOMAIN = "howso.co"
+SITE_ID = 1
+
+CURRENT_CITIES = [259, 258, 257, 256, 255, 1, 888, 92]
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['projects.howso.co', 'www.projects.howso.co', 'howso.co', 'www.howso.co']
+ALLOWED_HOSTS = ['tampa.howso.co', 'www.tampa.howso.co', 'howso.co', 'www.howso.co']
 
+CITIES_LIGHT_TRANSLATION_LANGUAGES = ['en']
+CITIES_LIGHT_INCLUDE_COUNTRIES = ['US']
 
 # Application definition
 
@@ -60,6 +64,13 @@ INSTALLED_APPS = (
     'nodes',
     'custom_users',
     'subdomains',
+    'addresses',
+    'attendees',
+    'classes',
+    'stripe_transactions',
+    'cities_light',
+    'phonenumber_field',
+    'ipware',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,10 +85,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'lg1.urls'
 
-SUBDOMAIN_URLCONFS = {
-    'projects':'nodes.urls',
-    }
-
+SUBDOMAIN_URLCONFS = {}
 
 WSGI_APPLICATION = 'lg1.wsgi.application'
 
@@ -128,5 +136,35 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
     "django.core.context_processors.static",
     "lg1.context_processors.get_current_path",
-    "lg1.context_processors.request_is_ajax", 
+    "lg1.context_processors.request_is_ajax",
 )
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+    },
+    'loggers': {
+        'cities_light': {
+            'handlers':['console'],
+            'propagate': True,
+            'level':'INFO',
+        },
+        # also use this one to see SQL queries
+        'django': {
+            'handlers':['console'],
+            'propagate': True,
+            'level':'INFO',
+        },
+    }
+} 

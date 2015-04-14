@@ -10,22 +10,21 @@ class CustomUserCreationForm(UserCreationForm):
 
     def __init__(self, *args, **kargs):
         super(CustomUserCreationForm, self).__init__(*args, **kargs)
-        del self.fields['username']
         self.fields['password2'].help_text = None
 
     class Meta:
         model = CustomUser
-        fields = ("email",)
+        fields = ('email',)
 
 class CustomUserChangeForm(UserChangeForm):
     """A form for updating users. Includes all the fields on
     the user, but replaces the password field with admin's
     password hash display field.
     """
-
+    
     def __init__(self, *args, **kargs):
         super(CustomUserChangeForm, self).__init__(*args, **kargs)
-        del self.fields['username']
 
     class Meta:
         model = CustomUser
+        exclude = ['username']

@@ -235,18 +235,6 @@ class AlternateCreate(AjaxResponseMixin, CreateView):
         kw['request'] = self.request # the trick!
         return kw
 
-class ProjectList(ListView):
-    model=Node
-    template_name="search/search.html"
-
-    def get_queryset(self):
-        return [('main', n.votes, n) for n in Node.objects.filter(is_top=True)[:20]]
-
-    def get_context_data(self, **kwargs):
-        context = super(ProjectList, self).get_context_data(**kwargs)
-        context["page_title"] = "Projects"
-        return context
-        
 class NodeList(ListView):
     model=Node
     template_name = "search/search.html"

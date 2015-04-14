@@ -198,3 +198,13 @@ OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory (errno = 1).
 13258 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
 13258 [qtp550190826-15] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
 13259 [qtp550190826-15] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/update/ params={commit=true} {optimize=,commit=} 0 2
+1071430747 [qtp550190826-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1428911299683&wt=json} status=0 QTime=46 
+1071430881 [qtp550190826-16] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1428911299795&wt=json} status=0 QTime=70 
+1071441272 [qtp550190826-22] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1428911310224&contentType=text/html;charset%3Dutf-8} status=0 QTime=19 
+1071441278 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1428911310225&contentType=text/html;charset%3Dutf-8} status=0 QTime=0 
+1071441353 [qtp550190826-19] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/replication params={command=details&_=1428911310311&wt=json} status=0 QTime=15 
+1071441354 [qtp550190826-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/luke params={numTerms=0&_=1428911310307&show=index&wt=json} status=0 QTime=18 
+1071441361 [qtp550190826-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1428911310315} status=0 QTime=0 
+1071441384 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/system params={_=1428911310313&wt=json} status=0 QTime=28 
+1071441387 [qtp550190826-22] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/ping params={action=status&_=1428911310317&wt=json} status=503 QTime=25 
+1071445906 [qtp550190826-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/logging params={_=1428911314877&since=0&wt=json} status=0 QTime=8 
