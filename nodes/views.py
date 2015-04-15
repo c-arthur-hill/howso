@@ -259,7 +259,7 @@ class NodeList(ListView):
  
     def get_context_data(self, **kwargs):
         context = super(NodeList, self).get_context_data(**kwargs)
-        context["page_title"] = "Questions & Answers"
+        context["page_title"] = "Project"
         context["parent_pk"] = self.kwargs.get("pk")
         return context
  

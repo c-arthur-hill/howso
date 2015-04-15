@@ -40,7 +40,7 @@ AUTH_USER_MODEL = 'custom_users.CustomUser'
 DOMAIN = "howso.co"
 SITE_ID = 1
 
-CURRENT_CITIES = [259, 258, 257, 256, 255, 1, 888, 92]
+CURRENT_CITIES = [259]
 
 TEMPLATE_DEBUG = True
 

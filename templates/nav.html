@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+    <header>
+        <div id="logo_div">
+            <a href="/" class="big_font" id="logo">HowSo.co</a>
+        </div>
+    </header>
     <nav>
         <ul id="nav_ul">
-            <li><a href="/">Home</a></li>
-            <li><a href="/class/list/">Learn</a></li>
-            <li><a href="/time/pick/">Teach</a></li>
-            <li><a href="/profile/">Profile</a></li>
+            <li><a {% block home %}{% endblock %} href="/">Home</a></li>
+            <li><a {% block learn %}{% endblock %} href="/class/list/">Learn</a></li>
+            <li><a {% block teach %}{% endblock %} href="/time/pick/">Teach</a></li>
+            <li><a {% block profile %}{% endblock %} href="/profile/">Profile</a></li>
         </ul>
     </nav>     
     {% block sub_content %}

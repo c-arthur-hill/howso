@@ -1,5 +1,5 @@
 {% extends "nav.html" %}
-{% block newest %}id="current"{% endblock %}
+{% block profile %}id="current"{% endblock %}
 {% block sub_content %}
         {% if page_title %}
         <h1>{{ page_title }}</h1>
@@ -28,7 +28,7 @@
                             <label>{% if node.is_question %}Question {% else %}Approach {% endif %}</label>
                         </div>
                         <div class="relative body">
-                            <a {% if node.pk == main %}id="#"{% endif %} class="body_link" href="{{ SITE_URL }}/{{ node.pk }}/#">{{ node.body }}</a>
+                            <a {% if node.pk == main %}id="#"{% endif %} class="body_link" href="{{ SITE_URL }}/projects/{{ node.pk }}/#">{{ node.body }}</a>
                         </div>
                         {% if node.url %}
                         <div class="url">
