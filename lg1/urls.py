@@ -9,6 +9,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from custom_users.forms import CustomUserCreationForm
+from django.contrib.auth.decorators import login_required
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -33,13 +34,13 @@ urlpatterns = patterns('',
      url(r'^delete/node/(?P<pk>[0-9]+)/$', node_views.NodeDelete.as_view()),
      url(r'^delete/node/(?P<pk>[0-9]+)/(?P<parent_pk>[0-9]+)/$', node_views.NodeDelete.as_view()),
      url(r'^delete/alternate/(?P<pk>[0-9]+)/(?P<original_pk>[0-9]+)/$', node_views.AlternateDelete.as_view()),
-     url(r'^class/create/(?P<time_pk>[0-9]+)/$', class_views.ClassCreate.as_view()),
+     url(r'^class/create/(?P<time_pk>[0-9]+)/$', login_required(class_views.ClassCreate.as_view())),
      url(r'^class/list/$', class_views.ClassList.as_view()),
-     url(r'^profile/$', attendee_views.Profile.as_view()),
-     url(r'^student/confirm/(?P<class_pk>[0-9]+)/$', attendee_views.StudentConfirm.as_view()),
-     url(r'^teacher/confirm/(?P<class_pk>[0-9]+)/$', attendee_views.TeacherConfirm.as_view()),
+     url(r'^profile/$', login_required(attendee_views.Profile.as_view())),
+     url(r'^student/confirm/(?P<class_pk>[0-9]+)/$', login_required(attendee_views.StudentConfirm.as_view())),
+     url(r'^teacher/confirm/(?P<class_pk>[0-9]+)/$', login_required(attendee_views.TeacherConfirm.as_view())),
      url(r'^time/pick/$', address_views.TimeList.as_view()),
-     url(r'^account/create/(?P<class_pk>[0-9]+)/$', stripe_views.AccountCreate.as_view()),
-     url(r'^card/create/(?P<class_pk>[0-9]+)/$', stripe_views.CardCreate.as_view()),
+     url(r'^account/create/(?P<class_pk>[0-9]+)/$', login_required(stripe_views.AccountCreate.as_view())),
+     url(r'^card/create/(?P<class_pk>[0-9]+)/$', login_required(stripe_views.CardCreate.as_view())),
      url(r'^$', base_views.HomeList.as_view()),
 )

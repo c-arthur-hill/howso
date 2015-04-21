@@ -205,3 +205,5 @@ INFO  - 2015-04-13 07:48:53.084; org.apache.solr.core.SolrCore; [collection1] we
 INFO  - 2015-04-13 07:48:53.107; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/system params={_=1428911310313&wt=json} status=0 QTime=28 
 INFO  - 2015-04-13 07:48:53.110; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/ping params={action=status&_=1428911310317&wt=json} status=503 QTime=25 
 INFO  - 2015-04-13 07:48:57.629; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/logging params={_=1428911314877&since=0&wt=json} status=0 QTime=8 
+INFO  - 2015-04-17 17:19:23.710; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1428192000000&wt=json} status=0 QTime=8 
+INFO  - 2015-04-17 17:19:25.028; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1428192000000&wt=json} status=0 QTime=30 

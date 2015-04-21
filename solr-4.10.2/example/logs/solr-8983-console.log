@@ -208,3 +208,5 @@ OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory (errno = 1).
 1071441384 [qtp550190826-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/system params={_=1428911310313&wt=json} status=0 QTime=28 
 1071441387 [qtp550190826-22] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/ping params={action=status&_=1428911310317&wt=json} status=503 QTime=25 
 1071445906 [qtp550190826-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/logging params={_=1428911314877&since=0&wt=json} status=0 QTime=8 
+1451271987 [qtp550190826-23] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1428192000000&wt=json} status=0 QTime=8 
+1451273305 [qtp550190826-20] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1428192000000&wt=json} status=0 QTime=30 

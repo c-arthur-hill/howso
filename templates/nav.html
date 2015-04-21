@@ -2,10 +2,13 @@
 {% block content %}
     <header>
         <div id="logo_div">
+            <a href="/" class="anchor_svg">
+                <object data="{{ STATIC_URL }}logo.svg" type="image/svg+xml"></object>
+            </a>
             <a href="/" class="big_font" id="logo">HowSo.co</a>
         </div>
     </header>
-    <nav>
+    <nav class="clear">
         <ul id="nav_ul">
             <li><a {% block home %}{% endblock %} href="/">Home</a></li>
             <li><a {% block learn %}{% endblock %} href="/class/list/">Learn</a></li>
